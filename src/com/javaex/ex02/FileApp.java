@@ -7,8 +7,12 @@ public class FileApp {
 	public static void main(String[] args) {
 
 		// try~catch문을 사용하여 에러를 수정하세요
-		fileRead();
-
+		try {
+			fileRead();
+		}catch(IOException e) {
+			System.out.println("파일이 없습니다.");
+		}
+		
 	}
 
 	// 수정하지 마세요

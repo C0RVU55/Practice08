@@ -20,8 +20,14 @@ public class LastNumberApp {
 		int result;
 		
 		//아래부분을 try~catch문을 사용하여 수정하세요
-		result = intArray[3];
-		System.out.println(result);
+		try {
+			result = intArray[3];
+			System.out.println(result);
+		}catch(ArrayIndexOutOfBoundsException e){
+			System.out.println("배열 범위를 넘었습니다.");
+		}
+		
+		
 		
 	}
 
